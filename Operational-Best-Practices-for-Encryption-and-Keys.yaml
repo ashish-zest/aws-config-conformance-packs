@@ -221,16 +221,6 @@ Resources:
         Owner: AWS
         SourceIdentifier: RDS_SNAPSHOT_ENCRYPTED
     Type: AWS::Config::ConfigRule
-  RdsStorageEncrypted:
-    Properties:
-      ConfigRuleName: rds-storage-encrypted
-      Scope:
-        ComplianceResourceTypes:
-        - AWS::RDS::DBInstance
-      Source:
-        Owner: AWS
-        SourceIdentifier: RDS_STORAGE_ENCRYPTED
-    Type: AWS::Config::ConfigRule
   RedshiftClusterConfigurationCheck:
     Properties:
       ConfigRuleName: redshift-cluster-configuration-check
