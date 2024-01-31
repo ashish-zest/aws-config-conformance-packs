@@ -156,16 +156,6 @@ Resources:
         Owner: AWS
         SourceIdentifier: ELBV2_ACM_CERTIFICATE_REQUIRED
     Type: AWS::Config::ConfigRule
-  EncryptedVolumes:
-    Properties:
-      ConfigRuleName: encrypted-volumes
-      Scope:
-        ComplianceResourceTypes:
-        - AWS::EC2::Volume
-      Source:
-        Owner: AWS
-        SourceIdentifier: ENCRYPTED_VOLUMES
-    Type: AWS::Config::ConfigRule
   IamCustomerPolicyBlockedKmsActions:
     Properties:
       ConfigRuleName: iam-customer-policy-blocked-kms-actions
